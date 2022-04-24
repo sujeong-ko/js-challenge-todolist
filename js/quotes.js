@@ -39,8 +39,6 @@ function handleQuotes() {
     author.innerText = todayQuote.author;
 }
 
-handleQuotes();
-setInterval(handleQuotes, 5000);
 
 const images = [
     "1.jpeg", "2.jpeg", "3.jpeg", "4.jpeg", "5.jpeg", "6.jpeg", "7.jpeg", "8.jpeg", "9.jpeg", "10.png", "11.png", "12.jpeg" 
@@ -55,5 +53,7 @@ function handleQuoteBoxBg() {
     bgImage.src = `images/${chosenImage}`;
 }
 
+handleQuotes();
+setInterval(handleQuotes, 5000);
 handleQuoteBoxBg();
 setInterval(handleQuoteBoxBg, 5000);
