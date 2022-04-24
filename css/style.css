@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+@import "screen-header.css";
+@import "reset.css";
+@import "article-section.css";
+@import "todo-section.css";
+@import "variables.css";
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    height: 110vh;
+}
+
+.dark-mode {
+    background-color: var(--dark-bg);
+    color: var(--main-white);
+}
+
+.dark-mode #greeting {
+    color: white;
+    text-shadow: var(--text-shadow-white);
+}
+
+main {
+    display: flex;
+}
+
+.article-sec {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 30%;
+}
+
+.todo-sec {
+    width: 70%;
+}
+
+.hidden {
+    display: none;
+}

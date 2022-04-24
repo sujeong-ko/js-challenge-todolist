@@ -1,0 +1,38 @@
+.todo-box {
+    padding: 10px;
+}
+
+#todo-form input {
+    margin: 10px 5px;
+    width: 90%;
+    height: 30px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: var(--box-shadow);
+}
+
+#todo-list {
+    padding: 10px;
+}
+
+#todo-list li {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 3px;
+    padding: 5px 50px;
+    text-shadow: var(--text-shadow-white);
+}
+
+#todo-list li:hover {
+    transform: scale(1.05);
+}
+
+#todo-list li button {
+    background-color: inherit;
+    color: var(--light-grey);
+    margin-left: 5px;
+}
+
+#todo-list li button i{
+    text-shadow: var(--text-shadow);
+}

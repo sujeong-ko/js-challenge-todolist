@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>TODO LIST</title>
+  </head>
+  <body>
+    <header class="screen-header">
+      <div class="screen-header__weather">
+        <span class="city"></span>
+        <div class="weather-box">
+          <span class="weather-icon"><img /></span>
+          <span class="weather-text"></span>
+        </div>
+      </div>
+      <div class="screen-header__log-in">
+        <form id="login-form" class="hidden">
+          <input
+            required
+            maxlength="15"
+            type="text"
+            placeholder="What is your name?"
+          />
+          <button>Log In</button>
+        </form>
+        <div class="screen-header__logged-in">
+          <span id="greeting" class="hidden"></span>
+        </div>
+      </div>
+      <div class="screen-header__today-info">
+        <span>⌚Time Now</span>
+        <span id="clock">00:00:00</span>
+        <span id="today"></span>
+      </div>
+    </header>
+    <main>
+      <section class="article-sec">
+        <div class="article-sec__btns">
+          <div class="article-sec__btn">
+            <span class="bg-change">
+              <i class="fa-solid fa-brush fa-2x"></i>
+            </span>
+          </div>
+          <div class="article-sec__btn">
+            <span class="mode-change">
+              <i class="fa-solid fa-moon fa-2x"></i>
+            </span>
+          </div>
+          <div class="article-sec__btn">
+            <a href="https://nomadcoders.co/" target="_blank">Nomad Coders</a>
+          </div>
+        </div>
+        <div id="quote"><span></span><span></span></div>
+      </section>
+      <section class="todo-sec">
+        <div class="todo-box">
+          <form id="todo-form">
+            <input
+              type="text"
+              placeholder="Write a Todo and press Enter😍"
+              required
+            />
+          </form>
+          <ul id="todo-list"></ul>
+        </div>
+      </section>
+    </main>
+    <script src="js/greetings.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/quotes.js"></script>
+    <script src="js/background.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/weather.js"></script>
+    <script
+      src="https://kit.fontawesome.com/58adb12a8e.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
